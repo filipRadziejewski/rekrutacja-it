@@ -1,4 +1,4 @@
-package com.mybenefit.p1;
+package com.mybenefit.p1.model;
 
 
 public class ElectricCar extends Car{

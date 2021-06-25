@@ -1,9 +1,11 @@
-package com.mybenefit.p1;
+package com.mybenefit.p1.model;
 
+
+import com.mybenefit.p1.Vehicle;
 
 import java.util.Objects;
 
-public class Car implements Vehicle{
+public class Car implements Vehicle {
     private String manufacturer;
     private String model;
     private int power;

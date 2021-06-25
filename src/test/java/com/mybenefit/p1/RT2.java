@@ -12,9 +12,10 @@ import static org.junit.Assert.assertThat;
 
 public class RT2 {
 
+
     @Test
     public void rt2_1(){
-        int expected = 3;
+        int expected = 0;
 
 
         List<Integer> list = new ArrayList<>();
@@ -24,12 +25,13 @@ public class RT2 {
         list.add(1);
 
         assertThat(list.get(2), is(equalTo(expected)));
-
     }
+
+
 
     @Test
     public void rt2_2(){
-        int expected = 3;
+        int expected = 0;
 
         List<Integer> list = new LinkedList<>();
         list.add(2);
@@ -40,9 +42,11 @@ public class RT2 {
         assertThat(list.get(2), is(equalTo(expected)));
     }
 
+
+
     @Test
     public void rt2_3(){
-        int expected = 3;
+        int expected = 0;
 
         Set<Integer> set = new TreeSet<>();
         set.add(2);
@@ -59,7 +63,7 @@ public class RT2 {
 
     @Test
     public void rt2_4(){
-        int expected = 3;
+        int expected = 0;
 
         List<Integer> list = new ArrayList<>();
         list.add(1);
@@ -84,7 +88,7 @@ public class RT2 {
 
     @Test
     public void rt2_5(){
-        int expected = 5;
+        int expected = 0;
 
         List<Integer> list = new ArrayList<>();
         list.add(1);
@@ -111,11 +115,15 @@ public class RT2 {
         list.add(3);
         list.add(4);
 
-        int expected = 10;
+        int expected = 0;
 
         int actual = list.stream().reduce(0, Integer::sum);
         assertThat(actual, is(equalTo(expected)));
     }
+
+
+
+
 
 
 
@@ -144,18 +152,12 @@ public class RT2 {
 
 
 
-
-
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void rt2_8() {
-        try {
             callSomeMethod();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
     }
 
-    private void callSomeMethod() throws Exception  {
-        throw new Exception();
+    private void callSomeMethod() {
+        throw new RuntimeException();
     }
 }

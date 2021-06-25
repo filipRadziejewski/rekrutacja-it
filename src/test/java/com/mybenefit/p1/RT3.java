@@ -1,5 +1,7 @@
 package com.mybenefit.p1;
 
+import com.mybenefit.p1.model.Car;
+import com.mybenefit.p1.model.ElectricCar;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -36,7 +38,7 @@ public class RT3 {
             .concat(astra.fuel()), is(equalTo(expected)));
     }
 
-    @Test(expected = RuntimeException.class)
+    @Test
     public void rt3_4(){
         Vehicle tesla = new ElectricCar(
             "Tesla", "Roadster");
@@ -59,4 +61,18 @@ public class RT3 {
         assertThat(map.get(new Car("Opel", "Adam")), is(equalTo(expected)));
     }
 
+
+
+
+
+    // Dopisać implementacje samolotu
+    @Test
+    public void rt3_6(){
+        String expected = "flyflyfuel";
+        Vehicle plane = null;
+
+        assertThat(plane.drive()
+            .concat(plane.stop())
+            .concat(plane.fuel()), is(equalTo(expected)));
+    }
 }

@@ -10,7 +10,7 @@ public class RT1 {
 
     @Test
     public void test1() {
-        String expected = "test";
+        String expected = "";
 
         // test
         assertThat("test", is(equalTo(expected)));
@@ -23,15 +23,19 @@ public class RT1 {
 
     @Test
     public void test2() {
-        String expected = "test";
+        String expected = "";
 
         // test
         assertThat(new String("test"), is(equalTo(expected)));
     }
 
+
+
+
+
     @Test
     public void test3() {
-        String expected = "test3";
+        String expected = "";
 
         // test
         assertThat(getActual3(), is(equalTo(expected)));
@@ -53,7 +57,7 @@ public class RT1 {
 
     @Test
     public void test4() {
-        String expected = "test";
+        String expected = "";
 
         String actual = "test";
         addBis4(actual);
@@ -73,7 +77,7 @@ public class RT1 {
 
     @Test
     public void test5() {
-        String expected = "test";
+        String expected = "";
 
 
         String actual = "test";
