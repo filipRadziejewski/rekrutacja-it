@@ -16,11 +16,6 @@ public class RT1 {
         assertThat("test", is(equalTo(expected)));
     }
 
-
-
-
-
-
     @Test
     public void test2() {
         String expected = "";
@@ -28,10 +23,6 @@ public class RT1 {
         // test
         assertThat(new String("test"), is(equalTo(expected)));
     }
-
-
-
-
 
     @Test
     public void test3() {
@@ -44,16 +35,6 @@ public class RT1 {
     private String getActual3() {
         return "test3";
     }
-
-
-
-
-
-
-
-
-
-
 
     @Test
     public void test4() {
@@ -70,11 +51,6 @@ public class RT1 {
         expected.concat("bis");
     }
 
-
-
-
-
-
     @Test
     public void test5() {
         String expected = "";
@@ -90,11 +66,6 @@ public class RT1 {
     private void addBis5(String actual) {
         actual = actual.concat("bis");
     }
-
-
-
-
-
 
     @Test
     public void test6() {

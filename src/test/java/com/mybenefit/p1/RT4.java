@@ -1,7 +1,5 @@
 package com.mybenefit.p1;
 
-
-
 import org.junit.Test;
 
 import java.util.ArrayList;

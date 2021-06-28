@@ -12,7 +12,6 @@ import static org.junit.Assert.assertThat;
 
 public class RT2 {
 
-
     @Test
     public void rt2_1(){
         int expected = 0;
@@ -27,8 +26,6 @@ public class RT2 {
         assertThat(list.get(2), is(equalTo(expected)));
     }
 
-
-
     @Test
     public void rt2_2(){
         int expected = 0;
@@ -41,8 +38,6 @@ public class RT2 {
 
         assertThat(list.get(2), is(equalTo(expected)));
     }
-
-
 
     @Test
     public void rt2_3(){
@@ -57,9 +52,6 @@ public class RT2 {
         List<Integer> list = new ArrayList<>(set);
         assertThat(list.get(2), is(equalTo(expected)));
     }
-
-
-
 
     @Test
     public void rt2_4(){
@@ -78,14 +70,6 @@ public class RT2 {
         list.add(2);
     }
 
-
-
-
-
-
-
-
-
     @Test
     public void rt2_5(){
         int expected = 0;
@@ -99,13 +83,6 @@ public class RT2 {
         List<Integer> list2 = list.stream().map(elem -> elem + 2).collect(Collectors.toList());
         assertThat(list2.get(2), is(equalTo(expected)));
     }
-
-
-
-
-
-
-
 
     @Test
     public void rt2_6(){

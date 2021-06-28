@@ -13,7 +13,6 @@ import static org.junit.Assert.assertThat;
 
 public class RT3 {
 
-
     @Test
     public void rt3_1(){
         Vehicle insignia = new Car("Opel", "Insignia", 150, 2000);
@@ -60,10 +59,6 @@ public class RT3 {
         map.put(adam, "adam");
         assertThat(map.get(new Car("Opel", "Adam")), is(equalTo(expected)));
     }
-
-
-
-
 
     // Dopisać implementacje samolotu
     @Test

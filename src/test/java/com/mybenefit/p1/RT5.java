@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 public class RT5 {
 
+    // find the correct number
     @Test
     public void rt5_1()  {
         GuessTheNumber guessTheNumber = new GuessTheNumber();
@@ -13,7 +14,6 @@ public class RT5 {
         boolean expected = guessTheNumber.guess(result);
         assertTrue(expected);
     }
-
 
     private final class GuessTheNumber{
 
