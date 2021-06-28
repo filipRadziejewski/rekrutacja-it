@@ -18,14 +18,14 @@ public class RT5 {
     private final class GuessTheNumber{
 
         private static final int MIN = 0;
-        private static final int MAX = 10000000;
+        private static final int MAX = Integer.MAX_VALUE;
         int i;
 
         GuessTheNumber(){
             i = (int) ((Math.random() * (MAX - MIN)) + MIN);
         }
 
-        final int checkNumber(int num) {
+        int checkNumber(int num) {
             if (num < i) {
                 return -1;
             } else if (num > i) {
@@ -35,7 +35,7 @@ public class RT5 {
             }
         }
 
-        final boolean guess(int num){
+        boolean guess(int num){
             if (num != i){
                 throw new RuntimeException("WRONG");
             } else {
