@@ -19,24 +19,18 @@ public class RT5 {
 
         private static final int MIN = 0;
         private static final int MAX = Integer.MAX_VALUE;
-        int i;
+        private int searchedNumber;
 
         GuessTheNumber(){
-            i = (int) ((Math.random() * (MAX - MIN)) + MIN);
+            searchedNumber = (int) ((Math.random() * (MAX - MIN)) + MIN);
         }
 
-        int checkNumber(int num) {
-            if (num < i) {
-                return -1;
-            } else if (num > i) {
-                return 1;
-            } else {
-                return 0;
-            }
+        int checkNumber(int guess) {
+            return Integer.compare(guess, searchedNumber);
         }
 
-        boolean guess(int num){
-            if (num != i){
+        boolean guess(int guess){
+            if (guess != searchedNumber){
                 throw new RuntimeException("WRONG");
             } else {
                 return true;
